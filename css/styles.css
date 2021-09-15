@@ -1,3 +1,4 @@
+/* Resetting all browsers settings before i use styling */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -47,6 +48,170 @@ table {
 	border-spacing: 0;
 }
 
-@media (max-width: 600px){
-    
+/* Importing of Open Sans Font */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,300,400,700);
+
+/* Use Of the new Font */
+body {
+	font-family: 'Open Sans', sans-serif;
+	background-color: #FFF7F3;
+}
+
+/* Input of general Styling of header */
+header {
+	background-color: #FFF7F3;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 50px;
+}
+
+.headerContainer{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.headerTextContainer {
+	display: flex;
+	align-items: center;
+	margin: 25px;
+	font-size: 18px;
+	font-style: italic;
+	font-weight: 800;
+}
+
+.headerTextContainer a {
+	text-decoration: none;
+}
+
+.checkAndRegisterContainer {
+	display: flex;
+	align-items: center;
+}
+
+.registerButton {
+	background-color: #ffece5; 
+	border: none;
+	color: #FE7D4E;
+	padding: 15px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius: 25%;
+	box-shadow: 10px 10px 30px 1px rgba(0, 0, 0, 0.3)
+}
+
+/* Header Store Name first part color change */
+#orangeText {
+	color: #FE7D4E;
+}
+
+.secondHandSection {
+	background-color: #FFF7F3;
+	height: 350px;
+}
+
+.topContainer {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+}
+
+/*  */
+#text {
+	font-size: 18px;
+	font-style: italic;
+	font-weight: 800;
+	padding-left: 10px;
+}
+
+#link {
+	height: 25px;
+	display: flex;
+	align-items: center;
+	padding-right: 10px;
+}
+
+#link a {
+	text-decoration: none;
+	color: #333333;
+}
+
+#arrow {
+	width: 25px;
+	height: 25px;
+}
+
+/* Pictures and links */
+.pictures {
+	display: flex;
+	gap: 15px;
+}
+
+/* Monthly Books and Previous */
+.previousMonthlyBooks h2{
+	font-size: 18px;
+	font-style: italic;
+	font-weight: 800;
+}
+
+/* Mobile first styling */
+@media (max-width: 641px){
+
+	/* Tntro Text */
+	.backgroundPictureAndText {
+		background-image: url("../img/hero\ image.jpg");
+		background-position: center;
+		background-size: cover;
+		color: white;
+		display: flex;
+		align-items: center;
+		height: 150px;
+	}
+
+	/* Second Hand Pictures and links */
+	.pictures {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.pictures img {
+		height: 200px;
+		width: 200px;
+		box-shadow: 10px 10px 30px 1px rgba(0, 0, 0, 0.3);
+	}
+
+	/* Previous Monthly Books */
+	.previousMonthlyBooks h2{
+		margin: 5px;
+		display: flex;
+		justify-content: center;
+	}
+
+	.monthlyBooksText {
+		display: flex;
+	}
+
+	.monthlyBooksText a {
+		display: flex;
+		text-decoration: none;
+		color: #333333;
+		align-items: center;
+		margin: 5px;
+		justify-content: center;
+		font-style: italic;
+		font-weight: 700;
+	}
+
+	.monthlyBooksText img {
+		width: 25px;
+		height: 25px;
+	}
 }

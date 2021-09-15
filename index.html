@@ -4,13 +4,121 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/styles.css" rel="stylesheet">
+    <link href="css/navigation.css" rel="stylesheet">
     <title>Second Hand Fantasy Books</title>
 </head>
 <body>
     <header>
         <div class="headerContainer">
 
+            <!-- Container for the Header Text/ Store Name -->
+            <div class="headerTextContainer">
+                <a href="#home" id="orangeText">Fantasy</a>
+                <a href="#home">books</a>
+            </div>
+
+            <!-- Container For Checkbox and Register button -->
+            <div class="checkAndRegisterContainer">
+
+                <!-- Nav -->
+                <nav class="navigation-menu">
+                    <label 
+                        class="hamburger-icon" 
+                        aria-label="Open navigation menu" 
+                        for="menu-toggle"
+                        >&#9776;</label>
+                    <input type="checkbox" id="menu-toggle" />
+                    <ul class="main-navigation">
+                        <li><a href="#">Bogklub</a></li>
+                        <li><a href="#">Top 10</a></li>
+                        <li><a href="#">Secondshand</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Register User Button -->
+                <button class="registerButton">Opret Bruger</button>
+            </div>
         </div>
     </header>
+
+    <main class="MainContent">
+
+        <!--  -->
+        <section>
+            <div class="backgroundPictureAndText">
+                <p> I Fantasybooks kan du finde alt indenfor fantasylitteratur. 
+                    Vi har alle nyere udgivelser indenfor genren, og derudover har vores fysiske butik i Århus også en stor secondhand afdeling med masser af nye, gamle, kendte og ukendte fantasybøger. 
+                    Der er mulighed for at aftale forsendelse, hvis du ikke har mulighed for at besøge vores fysiske butik.
+                    Vi glæder os til at tage dig med ind i vores fantastiske fantasyunivers!
+                </p>
+            </div>
+        </section>
+
+        <!--  -->
+        <section class="secondHandSection">
+
+            <!-- Top Text and link -->
+            <div class="topContainer">
+                <div id="text">
+                    <h3>Secondhand</h3>
+                </div>
+
+                <div id="link">
+                    <a href="secondhand">Vis Flere</a>
+                    <a href="#secondhand" id="arrow">
+                        <img src="img/arrow-icon.svg" alt="arrow pointing right">
+                    </a>
+                </div>
+            </div>
+
+            <!-- Pictures / link -->
+            <div class="pictures">
+
+                <!-- De vise Sten -->
+                <a href="">
+                    <img src="books/HarryPotterOgDeVisesSten.png" alt="Harry Potter og De Vise Sten">
+                </a>
+
+                <!-- fangen fra Azkaban -->
+                <a href="">
+                    <img src="books/HarryPotterOgFangenFraAzkaban.png" alt="Harry Potter og De Vise Sten">
+                </a>
+
+                <!-- Mortal Engines -->
+                <a href="">
+                    <img src="books/MortalEnginesDeRullendeByer.png" alt="Harry Potter og De Vise Sten">
+                </a>
+
+                <!-- Vildheks -->
+                <a href="">
+                    <img src="books/Vildheks.png" alt="Harry Potter og De Vise Sten">
+                </a>
+            </div>
+        </section>
+
+        <!-- Monthly Books Main -->
+        <section class="monthlyBook">
+
+            <!-- Previous Monthly Books -->
+            <div class="previousMonthlyBooks">
+                <h2>Månedens Bog</h2>
+
+                <div class="monthlyBooksText">
+                    <p>Hver måned anbefaler vi en bog. En bog som vi bare ved at alle fantasy læserne vil blive opslugt af. </p>
+                    <p>Månedens bog er, som altid, at finde rigtigt billigt i vores secondhand store i denne måned.</p>
+                </div>
+
+                <!-- Link to Previous Monthly Books -->
+                <a href="">Tidligere måneders bøger
+                    <img src="img/arrow-icon.svg" alt="Arrow pointing Right">
+                </a>
+            </div>
+
+            <!-- Monthly Book -->
+            <div class="thisMonthsBook">
+
+            </div>
+        </section>
+    </main>
 </body>
 </html>
