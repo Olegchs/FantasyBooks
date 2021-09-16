@@ -64,6 +64,7 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	height: 50px;
+	padding: 20px;
 }
 
 .headerContainer{
@@ -83,6 +84,7 @@ header {
 
 .headerTextContainer a {
 	text-decoration: none;
+	color: #333333;
 }
 
 .checkAndRegisterContainer {
@@ -110,9 +112,29 @@ header {
 	color: #FE7D4E;
 }
 
+/* Top Section Intro and background image */
+.backgroundPictureAndText {
+	background-image: url("../img/hero\ image.jpg");
+	background-position: center;
+	background-size: cover;
+	color: white;
+	display: flex;
+	align-items: center;
+	height: 450px;
+	flex-direction: column;
+	justify-content: center;
+	padding: 15px;
+}
+
+/* Second hand books section */
 .secondHandSection {
+	transform: translateY(50px);
 	background-color: #FFF7F3;
-	height: 350px;
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 .topContainer {
@@ -120,7 +142,20 @@ header {
 	width: 100%;
 	justify-content: space-between;
 	align-items: center;
-	padding: 10px;
+	padding: 20px;
+}
+
+.pictures img {
+	height: 500px;
+	width: 324px;
+	box-shadow: 10px 10px 30px 1px rgba(0, 0, 0, 0.3);
+}
+
+/* Pictures and links */
+.pictures {
+	display: flex;
+	justify-content: center;
+	gap: 15px;
 }
 
 /*  */
@@ -128,7 +163,7 @@ header {
 	font-size: 18px;
 	font-style: italic;
 	font-weight: 800;
-	padding-left: 10px;
+	padding-left: 30px;
 }
 
 #link {
@@ -141,6 +176,9 @@ header {
 #link a {
 	text-decoration: none;
 	color: #333333;
+	box-shadow: 10px 10px 30px 1px rgba(0, 0, 0, 0.3);
+	font-style: italic;
+	font-weight: 700;
 }
 
 #arrow {
@@ -148,47 +186,226 @@ header {
 	height: 25px;
 }
 
-/* Pictures and links */
-.pictures {
+/* Monthly Books and Previous */
+.monthlyBook {
+	transform: translateY(150px);
+	background-color: #fefdf9;
 	display: flex;
-	gap: 15px;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
 }
 
-/* Monthly Books and Previous */
+.previousMonthlyBooks {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
 .previousMonthlyBooks h2{
 	font-size: 18px;
 	font-style: italic;
 	font-weight: 800;
 }
 
+.previousMonthlyBooks a {
+	display: flex;
+	text-decoration: none;
+	color: #333333;
+	align-items: center;
+	margin: 5px;
+	justify-content: center;
+	font-style: italic;
+	font-weight: 700;
+	flex-direction: row;
+	font-size: 14px;
+}
+
+.previousMonthlyBooks img {
+	width: 35px;
+	height: 35px;
+}
+
+.thisMonthsBook {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 20px;
+	background-color: #fef2f2;
+	gap: 10px;
+}
+
+.monthlyBooksText {
+	display: flex;
+	height: 130px;
+	margin: 10px;
+	flex-direction: column;
+	justify-content: space-around;
+	color: #707070;
+}
+
+.thisMonthsBook h1 {
+	font-size: 18px;
+	font-style: italic;
+	font-weight: 800;
+	color: #FE7D4E;
+}
+
+.authorAndTypeContainer {
+	display: flex;
+	padding: 10px;
+	gap: 20px;
+}
+
+.monthlyBookAuthorAndType {
+	color: #707070;
+}
+
+.author h3 {
+	font-weight: bold;
+	padding-top: 5px;
+}
+
+.bookType h3 {
+	font-weight: bold;
+	padding-top: 5px;
+}
+
+/* Monthly Book */
+.monthlyBookDescription {
+	color: #707070;
+	padding: 10px;
+}
+
+/* Monthly Book Button Styling */
+.orderBook {
+	background-color: #FE7D4E;
+	  color: white;
+	  padding: 10px 20px;
+	  text-align: center;
+	  text-decoration: none;
+	  display: inline-block;
+	  margin: 4px 2px;
+	  cursor: pointer;
+	  border-radius: 16px;
+	border: 1px solid #f8e1d9;
+}
+
+.signupForBookClub {
+	transform: translateY(300px);
+	height: 500px;
+	background-image: url("../img/Cover-Bogklub.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.signupForBookClubButton {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: inherit;
+}
+
+/* Sign up for book club Button Styling */
+.memberSignUpForBookClub {
+	background-color: #FE7D4E;
+	  color: white;
+	  padding: 10px 20px;
+	  text-align: center;
+	  text-decoration: none;
+	  display: inline-block;
+	  margin: 4px 2px;
+	  cursor: pointer;
+	  border-radius: 16px;
+	border: 1px solid #f8e1d9;
+}
+
+/* Footer */
+footer {
+	height: 500px;
+	transform: translateY(450px);
+}
+
+.footerContainer {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-direction: row;
+	background-color: #fefdf9;
+	height: inherit;
+}
+
+.textContainerFooter {
+	display: flex;
+	flex-direction: row;
+	font-size: 18px;
+	font-style: italic;
+	font-weight: 800;
+}
+
+.textContainerFooter a {
+	text-decoration: none;
+	color: #333333;
+}
+
+.footerTextContainer {
+	padding: 10px;
+}
+
+#phone, #mail, #openingHours, #socialMedia {
+	padding: 10px;
+}
+
+#phone h3, #mail h3, #openingHours h3, #socialMedia h3{
+	font-weight: bold;
+}
+
+.socialMediaLinks img {
+	height: 50px;
+	width: 50px;
+}
+
 /* Mobile first styling */
 @media (max-width: 641px){
 
 	/* Tntro Text */
-	.backgroundPictureAndText {
-		background-image: url("../img/hero\ image.jpg");
-		background-position: center;
-		background-size: cover;
-		color: white;
-		display: flex;
-		align-items: center;
-		height: 150px;
-	}
+	/* .backgroundPictureAndText {
+		padding: 15px;
+	} */
 
 	/* Second Hand Pictures and links */
+	.secondHandSection {
+		height: 2100px;
+	}
+
 	.pictures {
-		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
 	}
 
 	.pictures img {
-		height: 200px;
-		width: 200px;
+		height: 500px;
+		width: 324px;
 		box-shadow: 10px 10px 30px 1px rgba(0, 0, 0, 0.3);
 	}
 
 	/* Previous Monthly Books */
+	.monthlyBook {
+		transform: translateY(100px);
+		flex-direction: column;
+		height: 1150px;
+	}
+
+	.previousMonthlyBooks{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		height: 400px;
+	}
+
 	.previousMonthlyBooks h2{
 		margin: 5px;
 		display: flex;
@@ -197,9 +414,14 @@ header {
 
 	.monthlyBooksText {
 		display: flex;
+		height: 130px;
+		margin: 10px;
+		flex-direction: column;
+		justify-content: space-around;
+		color: #707070;
 	}
 
-	.monthlyBooksText a {
+	.previousMonthlyBooks a {
 		display: flex;
 		text-decoration: none;
 		color: #333333;
@@ -208,10 +430,69 @@ header {
 		justify-content: center;
 		font-style: italic;
 		font-weight: 700;
+		box-shadow: 10px 10px 30px 1px rgba(0, 0, 0, 0.3);
 	}
 
-	.monthlyBooksText img {
+	.previousMonthlyBooks img {
 		width: 25px;
 		height: 25px;
+	}
+
+	/* This Months Book */
+	.thisMonthsBook {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 20px;
+		background-color: #fef2f2;
+	}
+
+	.thisMonthsBook img {
+		height: 500px;
+		width: 324px;
+		box-shadow: 10px 10px 30px 1px rgba(0, 0, 0, 0.3);
+	}
+
+	.currentMonthlyBookInformation {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 15px;
+	}
+
+	/* Sign up for Book Club */
+	.signupForBookClub {
+		transform: translateY(120px);
+		height: 300px;
+		background-image: url("../img/Cover-Bogklub.jpg");
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	.signupForBookClubButton {
+		height: 300px;
+	}
+
+	/* Footer */
+	footer {
+		height: 750px;
+		transform: translateY(150px);
+	}
+	.footerContainer {
+		flex-direction: column;
+		height: auto;
+	}
+
+	.contactInformation {
+		height: 500px;
+	}
+
+	.information {
+		margin: 30px;
+	}
+
+	.storePicture {
+		height: 250px;
 	}
 }

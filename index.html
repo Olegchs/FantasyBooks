@@ -2,6 +2,13 @@
 <html lang="da">
 <head>
     <meta charset="utf-8">
+    <meta name="description" 
+        content="Secondhand Book Store.
+        Som noget nyt kan du nu få tilsendt dine bøger til hele Danmark. 
+        På nuværende tidspunkt har vi følgende bøger til salg i vores secondhand store.
+        Mangler hjælp til noget, kan du altid kontakte os på tlf. 12 34 56 78 eller mail: info@fantasybooks.dk inden for butikkens åbningstid.">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Nikolaj Tost Søgaard">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/styles.css" rel="stylesheet">
     <link href="css/navigation.css" rel="stylesheet">
@@ -46,11 +53,10 @@
         <!--  -->
         <section>
             <div class="backgroundPictureAndText">
-                <p> I Fantasybooks kan du finde alt indenfor fantasylitteratur. 
-                    Vi har alle nyere udgivelser indenfor genren, og derudover har vores fysiske butik i Århus også en stor secondhand afdeling med masser af nye, gamle, kendte og ukendte fantasybøger. 
-                    Der er mulighed for at aftale forsendelse, hvis du ikke har mulighed for at besøge vores fysiske butik.
-                    Vi glæder os til at tage dig med ind i vores fantastiske fantasyunivers!
-                </p>
+                <p> I Fantasybooks kan du finde alt indenfor fantasylitteratur.</p> 
+                <p>Vi har alle nyere udgivelser indenfor genren, og derudover har vores fysiske butik i Århus også en stor secondhand afdeling med masser af nye, gamle, kendte og ukendte fantasybøger.</p> 
+                <p>Der er mulighed for at aftale forsendelse, hvis du ikke har mulighed for at besøge vores fysiske butik.</p>
+                <p>Vi glæder os til at tage dig med ind i vores fantastiske fantasyunivers!</p>
             </div>
         </section>
 
@@ -117,8 +123,112 @@
             <!-- Monthly Book -->
             <div class="thisMonthsBook">
 
+                <!-- Picture of the monthly book -->
+                <img src="books/HarryPotterOgDeVisesSten.png" alt="Harry Potter og De vise sten">
+
+                <div class="currentMonthlyBookInformation">
+
+                    <!-- Title of the monthly Book -->
+                    <h1>Harry Potter og de vises sten</h1>
+
+                    <!-- Author and Book Type Container -->
+                    <div class="authorAndTypeContainer">
+
+                        <!-- Author and text -->
+                        <div class="author">
+
+                            <!-- General Author Text -->
+                            <p class="monthlyBookAuthorAndType">Forfatter</p>
+
+                            <!-- This Monthly Books Author -->
+                            <h3>J.K. Rowling</h3>
+                        </div>
+
+                        <!-- Book Type and Text -->
+                        <div class="bookType">
+
+                            <!-- General Type Text -->
+                            <p class="monthlyBookAuthorAndType">Type</p>
+
+                            <h3>Fantasy, Alle aldre</h3>
+                        </div>
+                    </div>
+
+                    <!-- Text that goes along with the book -->
+                    <p class="monthlyBookDescription">Her kan du læse et kort resumé af bogen, samt få vores oplevelser både med bogen og med filmen.</p>
+
+                    <!-- Button to Order Book -->
+                    <button class="orderBook">Bestil bog</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sign up for Book Club -->
+        <section class="signupForBookClub">
+            <div class="signupForBookClubButton">
+                <button class="memberSignUpForBookClub">Tilmeld mig bogklubben</button>
             </div>
         </section>
     </main>
+
+    <footer>
+
+        <!-- Footer Container -->
+        <div class="footerContainer">
+
+            <!-- Contact information and location of the store -->
+            <div class="contactInformation">
+
+                <!-- Container -->
+                <div class="information">
+
+                    <!-- Container for the Store Name -->
+                    <div class="footerTextContainer">
+
+                        <!-- Div to make the text be close against each other -->
+                        <div class="textContainerFooter">
+                            <a href="#home" id="orangeText">Fantasy</a>
+                            <a href="#home">books</a>
+                        </div>
+                        <p>Egelykke 3, st.</p>
+                        <P>8000 århus C.</P>
+                    </div>
+
+                    <!-- Phone -->
+                    <div id="phone">
+                        <h3>Telefon:</h3>
+                        <p>13 34 56 78</p>
+                    </div>
+
+                    <!-- Mail -->
+                    <div id="mail">
+                        <h3>Mail:</h3>
+                        <p>info@fantasybooks.dk</p>
+                    </div>
+
+                    <!-- Opening hours -->
+                    <div id="openingHours">
+                        <h3>Åbningstider:</h3>
+                        <p>Mandag-Fredag: 10.00 - 18.00</p>
+                        <p>Lørdag: 10.00 - 13.00</p>
+                    </div>
+
+                    <!-- Social Media Links -->
+                    <div id="socialMedia">
+                        <h3>Følg os på sociale medier:</h3>
+
+                        <a href="#facebook" class="socialMediaLinks"><img src="img/facebook-icon.svg" alt="Facebook Icon"></a>
+                        <a href="#instagram" class="socialMediaLinks"><img src="img/instagram-icon.svg" alt="Facebook Icon"></a>
+                        <a href="#twitter" class="socialMediaLinks"><img src="img/twitter-icon.svg" alt="Facebook Icon"></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Store Picture -->
+            <div class="storePicture">
+                <img src="img/footer.jpg" alt="Store Picture">
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
