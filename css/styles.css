@@ -176,7 +176,6 @@ header {
 #link a {
 	text-decoration: none;
 	color: #333333;
-	box-shadow: 10px 10px 30px 1px rgba(0, 0, 0, 0.3);
 	font-style: italic;
 	font-weight: 700;
 }
@@ -311,14 +310,14 @@ header {
 /* Sign up for book club Button Styling */
 .memberSignUpForBookClub {
 	background-color: #FE7D4E;
-	  color: white;
-	  padding: 10px 20px;
-	  text-align: center;
-	  text-decoration: none;
-	  display: inline-block;
-	  margin: 4px 2px;
-	  cursor: pointer;
-	  border-radius: 16px;
+	color: white;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius: 16px;
 	border: 1px solid #f8e1d9;
 }
 
@@ -369,11 +368,6 @@ footer {
 
 /* Mobile first styling */
 @media (max-width: 641px){
-
-	/* Tntro Text */
-	/* .backgroundPictureAndText {
-		padding: 15px;
-	} */
 
 	/* Second Hand Pictures and links */
 	.secondHandSection {
@@ -430,7 +424,6 @@ footer {
 		justify-content: center;
 		font-style: italic;
 		font-weight: 700;
-		box-shadow: 10px 10px 30px 1px rgba(0, 0, 0, 0.3);
 	}
 
 	.previousMonthlyBooks img {
